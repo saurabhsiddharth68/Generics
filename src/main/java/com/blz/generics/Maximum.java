@@ -25,3 +25,4 @@ public class Maximum<E extends Comparable> {
         System.out.println("Welcome To Generics Maximum Program");
     }
 }
+// Print Max Number
