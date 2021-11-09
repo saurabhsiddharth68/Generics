@@ -1,14 +1,21 @@
 package com.blz.generics;
 
-public class Maximum {
+public class Maximum<E extends Comparable> {
 
-    public static String findMaximum(String  a, String  b, String  c) {
-        String max = a;
-        if (b.compareTo(a) > 0 && b.compareTo(c) > 0) {
-            max = b;
-        }
-        if (c.compareTo(max) > 0) {
-            max = c;
+    E[] inputArray;
+    public Maximum(E[] inputArray){
+        this.inputArray = inputArray;
+    }
+    public E findMaximum(){
+        E result = findMaximum(inputArray);
+        return result;
+    }
+    public static <E extends Comparable> E findMaximum(E[] inputArray){
+        E max = inputArray[0];
+        for (E element : inputArray){
+            if (element.compareTo(max)>0){
+                max = element;
+            }
         }
         return max;
     }
