@@ -10,11 +10,12 @@ public class Maximum {
         if (c.compareTo(max)>0){
             max = c;
         }
+        System.out.println(max);
         return max;
     }
     public static void main(String[] args){
 
         System.out.println("Welcome To Generics Maximum Program");
+        Maximum.findMaximum(6,3,8);
     }
 }
-// Find Third Position Max Number
