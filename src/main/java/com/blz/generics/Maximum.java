@@ -17,3 +17,4 @@ public class Maximum {
         System.out.println("Welcome To Generics Maximum Program");
     }
 }
+// Find Third Position Max Number
